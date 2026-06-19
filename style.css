@@ -1,0 +1,168 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header com estilo cinematográfico */
+.vader-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), #0b0b0b), 
+                url('https://t4.ftcdn.net/jpg/03/13/36/79/360_F_313367965_7B8Y7JrJ3JAG6zdjw51L59kVQZMlA9K7.jpg') no-repeat center top/cover; /* Imagem genérica escura caso queira substituir */
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid #8b0000;
+}
+
+.header-overlay h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.header-overlay .subtitle {
+    font-size: 1.2rem;
+    color: #a9a9a9;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Seção de Citação */
+.intro {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #121212;
+}
+
+.intro blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #d3d3d3;
+    border-left: 4px solid #8b0000;
+    padding-left: 20px;
+    display: inline-block;
+    max-width: 800px;
+}
+
+.intro blockquote span {
+    display: block;
+    font-size: 1rem;
+    color: #8b0000;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estrutura da Linha do Tempo */
+.timeline-container {
+    padding: 80px 0;
+    background: #0b0b0b;
+    position: relative;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #262626;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+/* Containers dos itens */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* Caixas de Conteúdo */
+.timeline-content {
+    padding: 30px;
+    background-color: #161616;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.timeline-item:hover::after {
+    background-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+/* Estilização interna dos cards */
+.timeline-content .date {
+    font-family: 'Orbitron', sans-serif;
+    color: #8b0000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.timeline-content h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.timeline-content p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #050505;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid #1a1a1a;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.right::after {
+    left: -8px;
+}
